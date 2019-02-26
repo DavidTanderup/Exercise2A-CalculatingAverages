@@ -10,7 +10,6 @@ namespace Exercise_2A___Calculating_Averages
     {
         static void Main(string[] args)
         {
-            Average();
             
         }
         
@@ -53,7 +52,6 @@ namespace Exercise_2A___Calculating_Averages
                 $" up!");
             Console.ReadLine();
         }
-        
         static void Average()
         {
                                  
@@ -99,6 +97,10 @@ namespace Exercise_2A___Calculating_Averages
 
 
         }
+
+
+
+
     }
     public class ILoveMath
     {
