@@ -10,7 +10,7 @@ namespace Exercise_2A___Calculating_Averages
     {
         static void Main(string[] args)
         {
-            Addition();
+            Average();
             
         }
         
@@ -90,7 +90,7 @@ namespace Exercise_2A___Calculating_Averages
 
 
             } while (countDown > 0);
-            double grade = total / countUp;
+            double grade = total / (countUp-1);
             string letter = math.LetterGrade(grade);
             Console.Clear();
             Console.WriteLine($"Your student recieved a {grade/100:P} resulting in an {letter}");
@@ -108,15 +108,15 @@ namespace Exercise_2A___Calculating_Averages
             {
                 return "A";
             }
-            else if (value > 90 && value <= 80)
+            else if (value < 90 && value >= 80)
             {
                 return "B";
             }
-            else if (value > 80 && value <= 70)
+            else if (value < 80 && value >= 70)
             {
                 return "C";
             }
-            else if (value > 70 && value <= 60)
+            else if (value < 70 && value >= 60)
             {
                 return "D";
             }
@@ -125,6 +125,10 @@ namespace Exercise_2A___Calculating_Averages
                 return "F";
             }
 
+
+
+
+     
 
 
         }
